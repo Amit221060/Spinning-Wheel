@@ -1,0 +1,24 @@
+<div>
+    <button (click)="loadUser()">Load profile</button>
+    {{ profile | json }}
+  </div>
+<div class="spinning_wheel">
+  <nav class="navbar navbar-light bg-primary">
+    <button class=".btn-success button" (click)="refresh()">Home</button>
+    <span class="navbar-brand mb-2 h1 mx-auto">Welcome to Spinning wheel</span>
+  </nav>
+  <div class="loader" id="off"></div>
+  <div  id="show" style="display:none">
+      <div class="message">
+          <p>Please Spin the wheel to be Fortunate</p>
+        </div>
+        <div id="chart"></div>
+        <div id="question">
+          <h1></h1>
+        </div>
+        <button class="bg-primary position" (click)="refresh()">Refresh</button>
+  </div>
+ 
+</div>
+
+

@@ -1,0 +1,72 @@
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin-left: 45%;
+    margin-top: 10%;
+  }
+.position{
+    margin-top: 420px;
+    margin-left: 920px;
+}
+.button{
+    border-radius:15%;
+}
+text{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:11px;
+    pointer-events:none;
+}
+#chart{
+    position:absolute;
+    width:500px;
+    height:480px;
+    top:80px;
+    left:150px;
+   
+   
+}
+#question{
+    position: absolute;
+    width:500px;
+    height:440px;
+    top:80px;
+    left:700px;
+   
+   
+
+}
+#question h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top:50%;
+    -webkit-transform:translate(0,-50%);
+            transform:translate(0,-50%);
+}
+
+p{
+    margin-left:230px;
+    margin-top:15px;
+    font-size: 15px;
+    
+}
+.navbar-light .navbar-brand {
+    color: #f8f9fa;
+}
